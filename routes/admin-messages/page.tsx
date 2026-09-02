@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import { listAllMessageThreads } from "../../index";
 import { listUsers } from "@venore/plugin-sdk/auth";
-import { getPluginAdminPageData } from "@venore/plugin-sdk";
+import { getPluginAdminPageData } from "@venore/plugin-sdk/admin";
 import { AdminAccessDenied } from "@venore/plugin-sdk/ui";
 import { AdminPageHeader } from "@venore/plugin-sdk/ui";
 import { EmptyState } from "@venore/plugin-sdk/ui";

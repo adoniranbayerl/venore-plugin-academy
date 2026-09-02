@@ -7,7 +7,7 @@ import {
   listEnrollmentsForCourse,
   listMessageThreadsForCourse,
 } from "../../index";
-import { getPluginAdminPageData } from "@venore/plugin-sdk";
+import { getPluginAdminPageData } from "@venore/plugin-sdk/admin";
 import { AdminAccessDenied } from "@venore/plugin-sdk/ui";
 import { Badge } from "@venore/plugin-sdk/ui";
 import { Card, CardContent, CardHeader, CardTitle } from "@venore/plugin-sdk/ui";

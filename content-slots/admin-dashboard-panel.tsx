@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BookOpen, ClipboardCheck, GraduationCap, Users } from "lucide-react";
-import { getPluginAdminPageData } from "@venore/plugin-sdk";
+import { getPluginAdminPageData } from "@venore/plugin-sdk/admin";
 import { Badge, Progress } from "@venore/plugin-sdk/ui";
 import { getAcademyOverviewHandler } from "../features/courses/get-academy-overview/handler";
 import type { AcademyOverview } from "../features/courses/get-academy-overview/types";

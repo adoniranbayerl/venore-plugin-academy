@@ -8,7 +8,7 @@ import {
   listEnrollmentsForCourse,
   listLessonsByCourse,
 } from "../../index";
-import { getPluginAdminPageData } from "@venore/plugin-sdk";
+import { getPluginAdminPageData } from "@venore/plugin-sdk/admin";
 import { AdminAccessDenied } from "@venore/plugin-sdk/ui";
 import { Badge } from "@venore/plugin-sdk/ui";
 import { Button } from "@venore/plugin-sdk/ui";

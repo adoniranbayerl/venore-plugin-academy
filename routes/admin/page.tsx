@@ -1,6 +1,6 @@
 import { GraduationCap } from "lucide-react";
 import { AdminCourseCard, listCourses, listLessonsByCourse } from "../../index";
-import { getPluginAdminPageData } from "@venore/plugin-sdk";
+import { getPluginAdminPageData } from "@venore/plugin-sdk/admin";
 import { AdminAccessDenied } from "@venore/plugin-sdk/ui";
 import { AdminPageHeader } from "@venore/plugin-sdk/ui";
 import { EmptyState } from "@venore/plugin-sdk/ui";
