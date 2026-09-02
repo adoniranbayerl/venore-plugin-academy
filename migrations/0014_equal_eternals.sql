@@ -1,0 +1,1 @@
+ALTER TABLE "academy"."lesson_activity_submissions" ADD COLUMN "review_score" integer;

@@ -1,0 +1,3 @@
+DROP INDEX "academy"."quiz_attempts_lesson_actor_attempt_idx";--> statement-breakpoint
+ALTER TABLE "academy"."quiz_attempts" ADD COLUMN "invalidated_at" timestamp with time zone;--> statement-breakpoint
+CREATE UNIQUE INDEX "quiz_attempts_lesson_actor_attempt_idx" ON "academy"."quiz_attempts" USING btree ("lesson_id","actor_id","attempt_number") WHERE "academy"."quiz_attempts"."invalidated_at" is null;

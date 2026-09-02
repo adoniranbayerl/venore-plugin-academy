@@ -1,0 +1,3 @@
+ALTER TABLE "academy"."lesson_examples" DROP CONSTRAINT "lesson_examples_media_check";--> statement-breakpoint
+ALTER TABLE "academy"."lesson_examples" ADD COLUMN "notation_data" text;--> statement-breakpoint
+ALTER TABLE "academy"."lesson_examples" ADD CONSTRAINT "lesson_examples_media_check" CHECK ("academy"."lesson_examples"."audio_media_id" is not null or "academy"."lesson_examples"."sheet_media_id" is not null or "academy"."lesson_examples"."notation_data" is not null);
