@@ -5,9 +5,9 @@ import { renderAbc, synth, TimingCallbacks, type TuneObject, type MidiBuffer } f
 import { Repeat } from "lucide-react";
 import { Button } from "@venore/plugin-sdk/ui";
 import { Badge } from "@venore/plugin-sdk/ui";
-import { usePitchListener } from "@venore/plugin-sdk/ui";
+import { usePitchListener } from "../shared/music";
 import { extractExpectedNotes, type ExpectedNote } from "./abc-expected-notes";
-import { frequencyToMidi, midiToOctave, pitchClassNamePt } from "@venore/plugin-sdk/ui";
+import { frequencyToMidi, midiToOctave, pitchClassNamePt } from "../shared/music";
 import type { NotationToken } from "./notation-abc";
 import { recordExercisePracticeAction } from "../blocks/actions";
 

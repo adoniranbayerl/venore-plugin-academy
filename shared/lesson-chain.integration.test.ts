@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { markTextRead } from "../features/progress/mark-text-read/service";
 import { markVideoWatched } from "../features/progress/mark-video-watched/service";
 import { submitQuizAttempt } from "../features/progress/submit-quiz-attempt/service";
-import { seedCourse, seedEnrollment, seedLessonRequirements, seedLessons, seedQuizQuestion, seedUser } from "@venore/plugin-sdk/testing";
+import { seedCourse, seedEnrollment, seedLessonRequirements, seedLessons, seedQuizQuestion, seedUser } from "../test-support/academy-seed";
 
 // Teste de segurança ponta a ponta contra banco real: hoje isLessonAccessible (fronteira usada
 // por mark-text-read, mark-video-watched e submit-quiz-attempt) só é exercitada com a função

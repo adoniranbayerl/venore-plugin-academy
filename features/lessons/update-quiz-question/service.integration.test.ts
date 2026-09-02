@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { seedCourse, seedLessons, seedQuizQuestion, seedUser } from "@venore/plugin-sdk/testing";
+import { seedCourse, seedLessons, seedQuizQuestion, seedUser } from "../../../test-support/academy-seed";
 import { updateQuizQuestionService } from "./service";
 
 describe("updateQuizQuestionService (integração)", () => {

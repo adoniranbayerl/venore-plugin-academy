@@ -9,7 +9,7 @@ import {
   seedLessons,
   seedTextRead,
   seedUser,
-} from "@venore/plugin-sdk/testing";
+} from "../../../test-support/academy-seed";
 import { deleteLessonService } from "./service";
 
 describe("deleteLessonService (integração)", () => {

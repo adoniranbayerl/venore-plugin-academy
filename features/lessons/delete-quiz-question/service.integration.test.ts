@@ -10,7 +10,7 @@ import {
   seedQuizAttempt,
   seedQuizQuestion,
   seedUser,
-} from "@venore/plugin-sdk/testing";
+} from "../../../test-support/academy-seed";
 import { deleteQuizQuestionService } from "./service";
 
 describe("deleteQuizQuestionService (integração)", () => {

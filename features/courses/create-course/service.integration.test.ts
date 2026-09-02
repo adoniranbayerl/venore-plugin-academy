@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { seedUser } from "@venore/plugin-sdk/testing";
+import { seedUser } from "../../../test-support/academy-seed";
 import { createCourse } from "./service";
 
 // Documenta o comportamento atual (não corrigir nesta sessão — instrução explícita): a colisão

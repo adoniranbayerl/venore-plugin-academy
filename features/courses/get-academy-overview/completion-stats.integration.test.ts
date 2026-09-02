@@ -8,7 +8,7 @@ import {
   seedLessons,
   seedQuizQuestion,
   seedUser,
-} from "@venore/plugin-sdk/testing";
+} from "../../../test-support/academy-seed";
 import { completionStatsByCourse } from "./store";
 
 // A SQL de completionStatsByCourse replica isComplete (shared/lesson-chain.ts) num agregado só —

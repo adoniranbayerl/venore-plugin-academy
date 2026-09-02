@@ -14,7 +14,7 @@ import {
   submitQuizAttempt,
   type LessonMessageThreadType,
 } from "../../index";
-import { uploadActivitySubmissionMediaAsset } from "@venore/plugin-sdk/media";
+import { uploadReservedCategoryAsset } from "@venore/plugin-sdk/media";
 import { isPluginActive } from "@venore/plugin-sdk";
 
 export type LessonActionState = { error: string | null };
@@ -202,11 +202,14 @@ export async function submitLessonActivityFileAction(
 
   const data = Buffer.from(await file.arrayBuffer());
 
-  const uploadResult = await uploadActivitySubmissionMediaAsset({
+  const uploadResult = await uploadReservedCategoryAsset({
     filename: file.name,
     contentType: file.type || "application/octet-stream",
     size: file.size,
     data,
+    categoryKey: "activity-submissions",
+    categoryName: "Entregas de atividade",
+    allowedMimeCategories: ["audio", "image", "document"],
   });
   if (!uploadResult.success) {
     return { error: uploadResult.error.message, submission: null };

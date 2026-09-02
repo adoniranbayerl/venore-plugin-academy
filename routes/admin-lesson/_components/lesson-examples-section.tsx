@@ -6,7 +6,7 @@ import { Button } from "@venore/plugin-sdk/ui";
 import { Input } from "@venore/plugin-sdk/ui";
 import { Textarea } from "@venore/plugin-sdk/ui";
 import { MediaPickerField } from "@venore/plugin-sdk/ui";
-import { InteractiveNotation } from "@venore/plugin-sdk/ui";
+import { InteractiveNotation } from "../../../shared/music";
 import { EmptyState } from "@venore/plugin-sdk/ui";
 import { useActionToast } from "@venore/plugin-sdk/ui";
 import { addLessonExampleAction, deleteLessonExampleAction, type LessonActionState } from "../actions";

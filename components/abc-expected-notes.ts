@@ -1,5 +1,5 @@
 import { TimingCallbacks, type TuneObject } from "abcjs";
-import { midiToPitchClass } from "@venore/plugin-sdk/ui";
+import { midiToPitchClass } from "../shared/music";
 import type { NotationToken } from "./notation-abc";
 
 // Deriva a sequência de notas esperadas (pitch + tempo + elementos SVG pra destacar) a partir de

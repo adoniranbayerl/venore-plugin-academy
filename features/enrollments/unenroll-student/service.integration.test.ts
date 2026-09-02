@@ -2,7 +2,7 @@ import { eq } from "drizzle-orm";
 import { describe, expect, it } from "vitest";
 import { db } from "@venore/plugin-sdk";
 import { enrollments } from "../../../database/schema";
-import { seedCourse, seedEnrollment, seedUser } from "@venore/plugin-sdk/testing";
+import { seedCourse, seedEnrollment, seedUser } from "../../../test-support/academy-seed";
 import { unenrollStudent } from "./service";
 
 describe("unenrollStudent (integração)", () => {

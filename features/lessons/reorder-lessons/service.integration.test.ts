@@ -2,7 +2,7 @@ import { asc, eq } from "drizzle-orm";
 import { describe, expect, it } from "vitest";
 import { db } from "@venore/plugin-sdk";
 import { lessons } from "../../../database/schema";
-import { seedCourse, seedLessons, seedUser } from "@venore/plugin-sdk/testing";
+import { seedCourse, seedLessons, seedUser } from "../../../test-support/academy-seed";
 import { reorderLessonsService } from "./service";
 
 // Prova o que o teste unitário (store mockada) não prova: as duas fases de reorderLessons

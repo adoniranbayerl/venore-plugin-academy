@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { InteractiveNotation } from "@venore/plugin-sdk/ui";
+import { InteractiveNotation } from "../shared/music";
 import { Button } from "@venore/plugin-sdk/ui";
 import { NotationPlayButton } from "./notation-play-button";
 import { SingAlongPractice } from "./sing-along-practice";
