@@ -1,0 +1,22 @@
+{
+  "name": "@venore/plugin-academy",
+  "version": "1.0.0",
+  "description": "Academy — cursos, trilha de aulas, quiz e notação musical (plugin do Venore Docks).",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./manifest": "./manifest.ts",
+    "./route-table": "./routes/route-table.ts",
+    "./contributions": "./contributions.ts",
+    "./contributions-client": "./contributions.client.ts",
+    "./migrations/*": "./migrations/*",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "class-variance-authority": ">=0.7", "drizzle-orm": ">=0.45", "next": ">=16",
+    "react": ">=19", "recharts": ">=3", "sonner": ">=2", "zod": ">=4"
+  },
+  "dependencies": { "abcjs": "^6.6.4", "pitchy": "^4.1.0" },
+  "devDependencies": { "drizzle-kit": "^0.31.10" }
+}
