@@ -38,4 +38,5 @@ export const academyContributions: PluginContributions = {
     const { renderAcademyPublicHomeShowcase } = await import("./content-slots/public-home-showcase");
     return renderAcademyPublicHomeShowcase();
   },
+  studentLandingPath: "/academy",
 };

@@ -1,6 +1,6 @@
 {
   "name": "@venore/plugin-academy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Academy — cursos, trilha de aulas, quiz e notação musical (plugin do Venore Docks).",
   "private": true,
   "type": "module",
